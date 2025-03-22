@@ -47,7 +47,8 @@ Cắm dây đối với chức năng mở cửa bằng thẻ từ RFID:
 
 - Kết nối servo với Arduino
 
-![image](https://github.com/user-attachments/assets/546a594a-1d84-47bd-91e1-02f69db18427)
+![image](https://github.com/user-attachments/assets/f1a1dfc6-2b99-4303-87ec-59e3eb19dfbc)
+
 # Hướng dẫn cài đặt và chạy chương trình
 1 Chuẩn bị phần cứng
 - Nạp mã Arduino:
