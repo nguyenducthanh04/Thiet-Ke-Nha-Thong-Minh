@@ -35,4 +35,17 @@ Phần mềm:
 - Pushover(dùng để gửi thông báo) 
 ## Cài đặt thư viện cần thiết
 ```pip3 install opencv-python pyserial requests flask numpy```
+# Hướng dẫn cắm dây bảng mạch
+Linh kiện	Chân Arduino	Kết nối chi tiết
+Gas Sensor (MQ-series)	A0	AO -> A0, VCC -> 5V, GND -> GND
+Light Sensor 1 (LDR)	A1	LDR -> A1, 10kΩ -> 5V, GND
+Light Sensor 2 (LDR)	A2	LDR -> A2, 10kΩ -> 5V, GND
+Light Sensor 3 (LDR)	A3	LDR -> A3, 10kΩ -> 5V, GND
+Buzzer (Active)	8	(+) -> 8 (qua 100-220Ω), (-) -> GND
+LED Gas Warning	7	Anode -> 7 (qua 220Ω), Cathode -> GND
+LED Light 1	6	Anode -> 6 (qua 220Ω), Cathode -> GND
+LED Light 2	5	Anode -> 5 (qua 220Ω), Cathode -> GND
+LED Light 3	4	Anode -> 4 (qua 220Ω), Cathode -> GND
+Gas Servo	9	Signal -> 9, VCC -> 5V, GND -> GND
+Face Servo	10	Signal -> 10, VCC -> 5V, GND -> GND
 
