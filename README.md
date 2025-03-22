@@ -1,4 +1,4 @@
-<h1 align="center"> PHÁT HIỆN HÀNH VI GIAN LẬN TRONG THI CỬ </h1>
+ # 🏠 XÂY DỰNG THIẾT KẾ HỆ THỐNG NHÀ THÔNG MINH
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-red?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
- # 🏠 XÂY DỰNG THIẾT KẾ HỆ THỐNG NHÀ THÔNG MINH
+
 
 # 🏡 Hệ thống nhà thông minh
 
