@@ -39,6 +39,13 @@ Phần mềm:
 Cắm dây đối với chức năng mở cửa khuôn mặt, cảnh báo khí gas, cảm biến ánh sáng: 
 
 ![image](https://github.com/user-attachments/assets/9b38467c-faf5-454c-b03c-c991f0fdf566)
+
+Cắm dây đối với chức năng mở cửa bằng thẻ từ RFID:
+- Kết nối RFID với Arduino
+![image](https://github.com/user-attachments/assets/ca694cb4-f1fd-4984-8a1b-5783add3cd02)
+
+- Kết nối servo với Arduino
+![image](https://github.com/user-attachments/assets/546a594a-1d84-47bd-91e1-02f69db18427)
 # Hướng dẫn cài đặt và chạy chương trình
 1 Chuẩn bị phần cứng
 - Nạp mã Arduino:
