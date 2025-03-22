@@ -50,18 +50,18 @@ Cắm dây đối với chức năng mở cửa bằng thẻ từ RFID:
 ![image](https://github.com/user-attachments/assets/f1a1dfc6-2b99-4303-87ec-59e3eb19dfbc)
 
 # Hướng dẫn cài đặt và chạy chương trình
-1 Chuẩn bị phần cứng
+## Chuẩn bị phần cứng
 - Nạp mã Arduino:
   + Mở file face_khigas_den.ino bằng Arduino IDE
   + Kết nối board Arduino với máy tính
   + Chạy nạp mã nguồn vào board
   + Đảm bảo chạy cổng COM8 để phù hợp với mã trong file face_recognition_with_web.py
-2 Cài đặt python
+## Cài đặt python
 Cài đặt python về máy và cài các thư viện phía trên bằng pip
-3 Cài đặt và đăng ký ứng dụng pushover
+## Cài đặt và đăng ký ứng dụng pushover
 - Cài đặt ứng dụng về máy điện thoại bằng AppStore hoặc CH Play
 - Đăng ký tài khoản trên pushover để lấy key sử dụng
-4 Các bước chạy chương trình
+## Các bước chạy chương trình
 Thứ nhất: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py)
 - Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
 Thứ hai: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
