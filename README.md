@@ -1,5 +1,5 @@
- # 🏠 XÂY DỰNG THIẾT KẾ HỆ THỐNG NHÀ THÔNG MINH
-
+<h1 align="center"> 🏠 XÂY DỰNG THIẾT KẾ HỆ THỐNG NHÀ THÔNG MINH </h1>
+ 
 <div align="center">
 
 <p align="center">
