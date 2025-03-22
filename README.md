@@ -14,15 +14,15 @@ Hệ thống nhà thông minh tích hợp các tính năng hiện đại như m�
 # Hệ thống
 ![image](https://github.com/user-attachments/assets/04d9da18-c132-4642-96b0-d643cd312b08)
 # Công nghệ sử dụng
-Phần cứng:
+## Phần cứng:
 - Camera (sử dụng Camera laptop)
 - Đầu lọc thẻ từ RFID
 - Cảm biến khí gas
 - Cảm biến ánh sáng
 - Đèn và còi báo động
-- Động cơ servo
 - Arduino
-Phần mềm:
+- Động cơ servo
+## Phần mềm:
 - Thư viện face_recognition và OpenCV trong Python
 - Ứng dụng pushover
 # Yêu cầu hệ thống
@@ -36,24 +36,39 @@ Phần mềm:
 ## Cài đặt thư viện cần thiết
 ```pip3 install opencv-python pyserial requests flask numpy```
 # Hướng dẫn cắm dây bảng mạch
+Cắm dây đối với chức năng mở cửa khuôn mặt, cảnh báo khí gas, cảm biến ánh sáng: 
+
 ![image](https://github.com/user-attachments/assets/9b38467c-faf5-454c-b03c-c991f0fdf566)
+
+Cắm dây đối với chức năng mở cửa bằng thẻ từ RFID:
+- Kết nối RFID với Arduino
+
+![image](https://github.com/user-attachments/assets/ca694cb4-f1fd-4984-8a1b-5783add3cd02)
+
+- Kết nối servo với Arduino
+
+![image](https://github.com/user-attachments/assets/f1a1dfc6-2b99-4303-87ec-59e3eb19dfbc)
+
 # Hướng dẫn cài đặt và chạy chương trình
-1 Chuẩn bị phần cứng
-- Nạp mã Arduino:
+## Chuẩn bị phần cứng
+- Nạp mã Arduino cho chức năng mở cửa bằng khuôn mặt, cảnh báo khí gas, cảm biến ánh sáng:
   + Mở file face_khigas_den.ino bằng Arduino IDE
   + Kết nối board Arduino với máy tính
   + Chạy nạp mã nguồn vào board
   + Đảm bảo chạy cổng COM8 để phù hợp với mã trong file face_recognition_with_web.py
-2 Cài đặt python
+- Nạp mã Arduino cho chức năng mở cửa bằng thẻ từ:
+  + Mở file the_tu_mo_cưa.ino bằng Arduino IDE
+  + Kết nối board Arduino với máy tính
+  + Chạy nạp mã nguồn vào board
+## Cài đặt python
 Cài đặt python về máy và cài các thư viện phía trên bằng pip
-3 Cài đặt và đăng ký ứng dụng pushover
+## Cài đặt và đăng ký ứng dụng pushover
 - Cài đặt ứng dụng về máy điện thoại bằng AppStore hoặc CH Play
 - Đăng ký tài khoản trên pushover để lấy key sử dụng
-4 Các bước chạy chương trình
-Thứ nhất: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py)
-- Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
-Thứ hai: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
-Thứ ba: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas.
+## Các bước chạy chương trình
+- Bước 1: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py). Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
+- Bước 2: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
+- Bước 3: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas.
 # Hướng dẫn sử dụng 
 1 Nhận diện khuôn mặt mở cửa: 
 - Người dùng đưa khuôn mặt vào camera để nhận diện.
@@ -71,4 +86,5 @@ Thứ ba: Chạy file face_recognition_with_web.py để sử dụng chức năn
 - Chỉ cần lấy tay che toàn bộ cảm biến hoặc để cảm biến vào nơi thiếu ánh sáng.
 - Đèn sẽ tự động bật.
 # Poster
+![Poster_CNTT5_ThanhNguyen](https://github.com/user-attachments/assets/88c03204-924c-4363-b59b-c254b1a99b39)
 
