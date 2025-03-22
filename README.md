@@ -36,16 +36,39 @@ Phần mềm:
 ## Cài đặt thư viện cần thiết
 ```pip3 install opencv-python pyserial requests flask numpy```
 # Hướng dẫn cắm dây bảng mạch
-Linh kiện	Chân Arduino	Kết nối chi tiết
-Gas Sensor (MQ-series)	A0	AO -> A0, VCC -> 5V, GND -> GND
-Light Sensor 1 (LDR)	A1	LDR -> A1, 10kΩ -> 5V, GND
-Light Sensor 2 (LDR)	A2	LDR -> A2, 10kΩ -> 5V, GND
-Light Sensor 3 (LDR)	A3	LDR -> A3, 10kΩ -> 5V, GND
-Buzzer (Active)	8	(+) -> 8 (qua 100-220Ω), (-) -> GND
-LED Gas Warning	7	Anode -> 7 (qua 220Ω), Cathode -> GND
-LED Light 1	6	Anode -> 6 (qua 220Ω), Cathode -> GND
-LED Light 2	5	Anode -> 5 (qua 220Ω), Cathode -> GND
-LED Light 3	4	Anode -> 4 (qua 220Ω), Cathode -> GND
-Gas Servo	9	Signal -> 9, VCC -> 5V, GND -> GND
-Face Servo	10	Signal -> 10, VCC -> 5V, GND -> GND
+![image](https://github.com/user-attachments/assets/9b38467c-faf5-454c-b03c-c991f0fdf566)
+# Hướng dẫn cài đặt và chạy chương trình
+1 Chuẩn bị phần cứng
+- Nạp mã Arduino:
+  + Mở file face_khigas_den.ino bằng Arduino IDE
+  + Kết nối board Arduino với máy tính
+  + Chạy nạp mã nguồn vào board
+  + Đảm bảo chạy cổng COM8 để phù hợp với mã trong file face_recognition_with_web.py
+2 Cài đặt python
+Cài đặt python về máy và cài các thư viện phía trên bằng pip
+3 Cài đặt và đăng ký ứng dụng pushover
+- Cài đặt ứng dụng về máy điện thoại bằng AppStore hoặc CH Play
+- Đăng ký tài khoản trên pushover để lấy key sử dụng
+4 Các bước chạy chương trình
+Thứ nhất: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py)
+- Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
+Thứ hai: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
+Thứ ba: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas.
+# Hướng dẫn sử dụng 
+1 Nhận diện khuôn mặt mở cửa: 
+- Người dùng đưa khuôn mặt vào camera để nhận diện.
+- Nếu nhận diện đúng với khuôn mặt đã lưu cửa sẽ tự động mở ra.
+- Sai khuôn mặt sẽ hiển cảnh báo đồng thời cửa sẽ không mở.
+2 Quét thẻ từ mở cửa:
+- Người dùng đưa thẻ từ vào quét.
+- Nếu đúng mã thẻ cửa sẽ mở.
+- Sai mã thẻ sẽ không mở cửa.
+- Nếu cửa đang mở chờ hết 1 phút cửa sẽ tự động đóng.
+3 Cảnh báo khí gas:
+- Sử dụng bật lửa xì gas vào cảm biến.
+- Cảm biến phát hiện khí gas còi sẽ kêu, đèn nhấp nháy, cửa sổ mở và thông báo qua pushover.
+4 Cảm biến ánh sáng bật đèn:
+- Chỉ cần lấy tay che toàn bộ cảm biến hoặc để cảm biến vào nơi thiếu ánh sáng.
+- Đèn sẽ tự động bật.
+# Poster
 
