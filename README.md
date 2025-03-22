@@ -62,10 +62,10 @@ Cài đặt python về máy và cài các thư viện phía trên bằng pip
 - Cài đặt ứng dụng về máy điện thoại bằng AppStore hoặc CH Play
 - Đăng ký tài khoản trên pushover để lấy key sử dụng
 ## Các bước chạy chương trình
-Thứ nhất: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py)
-- Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
-Thứ hai: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
-Thứ ba: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas.
+- Bước 1: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py)
+  Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
+- Bước 2: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
+- Bước 3: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas.
 # Hướng dẫn sử dụng 
 1 Nhận diện khuôn mặt mở cửa: 
 - Người dùng đưa khuôn mặt vào camera để nhận diện.
