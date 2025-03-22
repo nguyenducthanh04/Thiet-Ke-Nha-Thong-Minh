@@ -52,12 +52,12 @@ Cắm dây đối với chức năng mở cửa bằng thẻ từ RFID:
 # Hướng dẫn cài đặt và chạy chương trình
 ## Chuẩn bị phần cứng
 - Nạp mã Arduino cho chức năng mở cửa bằng khuôn mặt, cảnh báo khí gas, cảm biến ánh sáng:
-  + Mở file face_khigas_den.ino bằng Arduino IDE
+  + Mở file FaceGasLightControl.ino bằng Arduino IDE
   + Kết nối board Arduino với máy tính
   + Chạy nạp mã nguồn vào board
   + Đảm bảo chạy cổng COM8 để phù hợp với mã trong file face_recognition_with_web.py
 - Nạp mã Arduino cho chức năng mở cửa bằng thẻ từ:
-  + Mở file the_tu_mo_cưa.ino bằng Arduino IDE
+  + Mở file RFIDDoor.ino bằng Arduino IDE
   + Kết nối board Arduino với máy tính
   + Chạy nạp mã nguồn vào board
 ## Cài đặt python
@@ -67,8 +67,8 @@ Cài đặt python về máy và cài các thư viện phía trên bằng pip
 - Đăng ký tài khoản trên pushover để lấy key sử dụng
 ## Các bước chạy chương trình
 - Bước 1: Chạy file capture_faces.py để thiết lập khuôn mặt và lưu hình ảnh vào folder data_set (python capture_faces.py). Ứng dụng sẽ chạy sau đó camera máy tính mở lên, bạn cần nhập tên người dùng vào terminal sau đó enter để camera chụp lại khuôn mặt của bạn và lưu vào folder data_set.
-- Bước 2: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt.
-- Bước 3: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas.
+- Bước 2: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt (python train_faces.py).
+- Bước 3: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas (python face_recognition_with_web.py).
 # Hướng dẫn sử dụng 
 1 Nhận diện khuôn mặt mở cửa: 
 - Người dùng đưa khuôn mặt vào camera để nhận diện.
