@@ -36,6 +36,7 @@ Phần mềm:
 ## Cài đặt thư viện cần thiết
 ```pip3 install opencv-python pyserial requests flask numpy```
 # Hướng dẫn cắm dây bảng mạch
+Cắm dây đối với chức năng mở cửa khuôn mặt, cảnh báo khí gas, cảm biến ánh sáng: 
 ![image](https://github.com/user-attachments/assets/9b38467c-faf5-454c-b03c-c991f0fdf566)
 # Hướng dẫn cài đặt và chạy chương trình
 1 Chuẩn bị phần cứng
