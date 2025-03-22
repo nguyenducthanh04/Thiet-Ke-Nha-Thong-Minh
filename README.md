@@ -70,19 +70,19 @@ Cài đặt python về máy và cài các thư viện phía trên bằng pip
 - Bước 2: Chạy file train_faces.py để training chương trình sau khi lưu xong khuôn mặt (python train_faces.py).
 - Bước 3: Chạy file face_recognition_with_web.py để sử dụng chức năng nhận diện khuôn mặt và thông báo khí gas (python face_recognition_with_web.py).
 # Hướng dẫn sử dụng 
-1 Nhận diện khuôn mặt mở cửa: 
+## Nhận diện khuôn mặt mở cửa: 
 - Người dùng đưa khuôn mặt vào camera để nhận diện.
 - Nếu nhận diện đúng với khuôn mặt đã lưu cửa sẽ tự động mở ra.
 - Sai khuôn mặt sẽ hiển cảnh báo đồng thời cửa sẽ không mở.
-2 Quét thẻ từ mở cửa:
+## Quét thẻ từ mở cửa:
 - Người dùng đưa thẻ từ vào quét.
 - Nếu đúng mã thẻ cửa sẽ mở.
 - Sai mã thẻ sẽ không mở cửa.
 - Nếu cửa đang mở chờ hết 1 phút cửa sẽ tự động đóng.
-3 Cảnh báo khí gas:
+## Cảnh báo khí gas:
 - Sử dụng bật lửa xì gas vào cảm biến.
 - Cảm biến phát hiện khí gas còi sẽ kêu, đèn nhấp nháy, cửa sổ mở và thông báo qua pushover.
-4 Cảm biến ánh sáng bật đèn:
+## Cảm biến ánh sáng bật đèn:
 - Chỉ cần lấy tay che toàn bộ cảm biến hoặc để cảm biến vào nơi thiếu ánh sáng.
 - Đèn sẽ tự động bật.
 # Poster
