@@ -71,4 +71,5 @@ Thứ ba: Chạy file face_recognition_with_web.py để sử dụng chức năn
 - Chỉ cần lấy tay che toàn bộ cảm biến hoặc để cảm biến vào nơi thiếu ánh sáng.
 - Đèn sẽ tự động bật.
 # Poster
+![Poster_CNTT5_ThanhNguyen](https://github.com/user-attachments/assets/88c03204-924c-4363-b59b-c254b1a99b39)
 
