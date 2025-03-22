@@ -34,5 +34,5 @@ Phần mềm:
 - Arduino IDE (nạp code Arduino)
 - Pushover(dùng để gửi thông báo) 
 Cài đặt thư viện cần thiết
-```pip3 install opencv-python pyserial requests flask numpy
+```pip3 install opencv-python pyserial requests flask numpy```
 
