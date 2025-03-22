@@ -33,6 +33,6 @@ Phần mềm:
 - Python (xử lý nhận diện khuôn mặt, điều khiển cửa và thực hiện gửi thông báo)
 - Arduino IDE (nạp code Arduino)
 - Pushover(dùng để gửi thông báo) 
-##Cài đặt thư viện cần thiết
+## Cài đặt thư viện cần thiết
 ```pip3 install opencv-python pyserial requests flask numpy```
 
