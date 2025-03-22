@@ -32,7 +32,7 @@ Hệ thống nhà thông minh tích hợp các tính năng hiện đại như m�
 ## Phần mềm:
 - Python (xử lý nhận diện khuôn mặt, điều khiển cửa và thực hiện gửi thông báo)
 - Arduino IDE (nạp code Arduino)
-- Pushover(dùng để gửi thông báo) 
+- Pushover (dùng để gửi thông báo) 
 ## Cài đặt thư viện cần thiết
 ```pip3 install opencv-python pyserial requests flask numpy```
 # Hướng dẫn cắm dây bảng mạch
