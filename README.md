@@ -51,11 +51,15 @@ Cắm dây đối với chức năng mở cửa bằng thẻ từ RFID:
 
 # Hướng dẫn cài đặt và chạy chương trình
 ## Chuẩn bị phần cứng
-- Nạp mã Arduino:
+- Nạp mã Arduino cho chức năng mở cửa bằng khuôn mặt, cảnh báo khí gas, cảm biến ánh sáng:
   + Mở file face_khigas_den.ino bằng Arduino IDE
   + Kết nối board Arduino với máy tính
   + Chạy nạp mã nguồn vào board
   + Đảm bảo chạy cổng COM8 để phù hợp với mã trong file face_recognition_with_web.py
+- Nạp mã Arduino cho chức năng mở cửa bằng thẻ từ:
+  + Mở file the_tu_mo_cưa.ino bằng Arduino IDE
+  + Kết nối board Arduino với máy tính
+  + Chạy nạp mã nguồn vào board
 ## Cài đặt python
 Cài đặt python về máy và cài các thư viện phía trên bằng pip
 ## Cài đặt và đăng ký ứng dụng pushover
