@@ -14,15 +14,15 @@ Hệ thống nhà thông minh tích hợp các tính năng hiện đại như m�
 # Hệ thống
 ![image](https://github.com/user-attachments/assets/04d9da18-c132-4642-96b0-d643cd312b08)
 # Công nghệ sử dụng
-1 Phần cứng:
+## Phần cứng:
 - Camera (sử dụng Camera laptop)
 - Đầu lọc thẻ từ RFID
 - Cảm biến khí gas
 - Cảm biến ánh sáng
 - Đèn và còi báo động
-- Động cơ servo
 - Arduino
-2 Phần mềm:
+- Động cơ servo
+## Phần mềm:
 - Thư viện face_recognition và OpenCV trong Python
 - Ứng dụng pushover
 # Yêu cầu hệ thống
